@@ -1,4 +1,8 @@
 Demo3::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/help"
+
 resources :events
 root :to => "welcome#index"
 get "welcome/say_hello" => "welcome#say"
