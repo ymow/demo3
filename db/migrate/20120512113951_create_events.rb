@@ -5,8 +5,9 @@ class CreateEvents < ActiveRecord::Migration
       t.text :description
       t.boolean :is_public
       t.integer :capacity
+t.datetime "created_at", :null =>false
+t.datetime "updated_at", :null => false
 
-      t.timestamps
-    end
+    
   end
 end
